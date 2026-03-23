@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crowdsource Analytics, Inc.</title>
+  <meta name="description" content="Crowdsource Analytics builds community intelligence platforms that turn real-time data into actionable insight." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --navy:#0d1b2a; --sky:#5b9bbf; --fog:#c8d8e4; --white:#ffffff; --muted:rgba(200,216,228,0.45); }
+    body { background:var(--navy); color:var(--fog); font-family:'DM Sans',sans-serif; font-weight:300; min-height:100vh; display:flex; flex-direction:column; }
+    body::before { content:''; position:fixed; inset:0; background-image:linear-gradient(rgba(91,155,191,0.035) 1px,transparent 1px),linear-gradient(90deg,rgba(91,155,191,0.035) 1px,transparent 1px); background-size:72px 72px; pointer-events:none; }
+    header { position:relative; z-index:10; display:flex; justify-content:space-between; align-items:center; padding:2.25rem 4rem; border-bottom:1px solid rgba(91,155,191,0.1); }
+    .logo { display:flex; align-items:center; gap:0.8rem; }
+    .logo svg { flex-shrink:0; }
+    .logo-text { font-family:'DM Sans',sans-serif; font-weight:500; font-size:0.82rem; letter-spacing:0.14em; text-transform:uppercase; color:var(--fog); }
+    .logo-text span { color:var(--sky); }
+    .header-meta { font-size:0.7rem; letter-spacing:0.18em; text-transform:uppercase; color:rgba(200,216,228,0.3); }
+    main { position:relative; z-index:10; flex:1; display:flex; flex-direction:column; justify-content:center; padding:0 4rem; max-width:780px; }
+    .eyebrow { display:flex; align-items:center; gap:0.75rem; font-size:0.68rem; letter-spacing:0.28em; text-transform:uppercase; color:var(--sky); margin-bottom:2.2rem; opacity:0; animation:up 0.7s ease 0.15s forwards; }
+    .eyebrow::before { content:''; width:28px; height:1px; background:var(--sky); }
+    h1 { font-family:'Cormorant Garamond',serif; font-weight:300; font-size:clamp(2.6rem,4.5vw,4rem); line-height:1.1; color:var(--white); margin-bottom:2rem; opacity:0; animation:up 0.7s ease 0.3s forwards; }
+    h1 em { font-style:italic; color:var(--sky); }
+    .tagline { font-size:1rem; line-height:1.8; color:var(--muted); max-width:520px; margin-bottom:3rem; opacity:0; animation:up 0.7s ease 0.45s forwards; }
+    .contact-line { display:flex; align-items:center; gap:1rem; opacity:0; animation:up 0.7s ease 0.6s forwards; }
+    .contact-label { font-size:0.7rem; letter-spacing:0.2em; text-transform:uppercase; color:rgba(200,216,228,0.3); }
+    .contact-email { font-size:0.9rem; font-weight:400; color:var(--fog); text-decoration:none; border-bottom:1px solid rgba(91,155,191,0.35); padding-bottom:2px; transition:color 0.2s,border-color 0.2s; }
+    .contact-email:hover { color:var(--sky); border-color:var(--sky); }
+    footer { position:relative; z-index:10; padding:1.5rem 4rem; border-top:1px solid rgba(91,155,191,0.08); font-size:0.7rem; letter-spacing:0.06em; color:rgba(200,216,228,0.2); }
+    @keyframes up { from{opacity:0;transform:translateY(14px)} to{opacity:1;transform:translateY(0)} }
+    @media(max-width:700px){ header{padding:1.5rem 1.75rem} .header-meta{display:none} main{padding:3rem 1.75rem} footer{padding:1.25rem 1.75rem} }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="14" cy="14" r="13"  stroke="#5b9bbf" stroke-width="0.6" opacity="0.3"/>
+        <circle cx="14" cy="14" r="8.5" stroke="#5b9bbf" stroke-width="0.6" opacity="0.5"/>
+        <circle cx="14" cy="14" r="4"   stroke="#5b9bbf" stroke-width="0.6"/>
+        <circle cx="14" cy="14" r="1.2" fill="#5b9bbf"/>
+        <circle cx="14" cy="5.5" r="1.1" fill="#5b9bbf" opacity="0.45"/>
+        <circle cx="22.5" cy="14" r="1.1" fill="#5b9bbf" opacity="0.45"/>
+        <circle cx="14" cy="22.5" r="1.1" fill="#5b9bbf" opacity="0.45"/>
+        <circle cx="5.5" cy="14"  r="1.1" fill="#5b9bbf" opacity="0.45"/>
+      </svg>
+      <span class="logo-text">Crowdsource <span>Analytics</span></span>
+    </div>
+    <span class="header-meta">Delaware C Corporation &nbsp;·&nbsp; Est. 2026</span>
+  </header>
+  <main>
+    <div class="eyebrow">Community Intelligence</div>
+    <h1>Data that moves<br/>at the <em>speed of people</em></h1>
+    <p class="tagline">Crowdsource Analytics builds real-time community intelligence platforms — transforming ground-level signals into the actionable insight that changes outcomes.</p>
+    <div class="contact-line">
+      <span class="contact-label">Enquiries</span>
+      <a class="contact-email" href="mailto:hello@crowdsourceanalytics.com">hello@crowdsourceanalytics.com</a>
+    </div>
+  </main>
+  <footer>© 2026 Crowdsource Analytics, Inc. &nbsp;·&nbsp; All rights reserved.</footer>
+</body>
+</html>
